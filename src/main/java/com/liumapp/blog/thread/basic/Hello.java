@@ -5,18 +5,18 @@ import org.slf4j.LoggerFactory;
 
 /**
  * @author liumapp
- * @file hello.java
+ * @file Hello.java
  * @email liumapp.com@gmail.com
  * @homepage http://www.liumapp.com
  * @date 3/15/18
  */
-public class hello extends Thread {
+public class Hello extends Thread {
 
-    private static Logger logger = LoggerFactory.getLogger(hello.class);
+    private static Logger logger = LoggerFactory.getLogger(Hello.class);
 
     @Override
     public void run() {
         super.run();
-        logger.info("hello world");
+        logger.info("Hello world");
     }
 }
