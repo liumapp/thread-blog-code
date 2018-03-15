@@ -1,6 +1,8 @@
 /**
- * Created by liumapp on 9/28/17.
- * E-mail:liumapp.com@gmail.com
- * home-page:http://www.liumapp.com
+ * @file package-info.java
+ * @author liumapp
+ * @email liumapp.com@gmail.com
+ * @homepage http://www.liumapp.com
+ * @date 3/15/18
  */
 package com.liumapp.blog.thread;
