@@ -24,6 +24,9 @@ public class LoginServletTest {
 
     @Test
     public void startCorrectLogin () {
-
+        CorrectALogin a = new CorrectALogin();
+        a.start();
+        CorrectBLogin b = new CorrectBLogin();
+        b.start();
     }
 }
