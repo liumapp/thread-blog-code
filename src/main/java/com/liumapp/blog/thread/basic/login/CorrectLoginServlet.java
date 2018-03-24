@@ -5,12 +5,12 @@ import org.slf4j.LoggerFactory;
 
 /**
  * @author liumapp
- * @file WrongLoginServlet.java
+ * @file CorrectLoginServlet.java
  * @email liumapp.com@gmail.com
  * @homepage http://www.liumapp.com
  * @date 3/24/18
  */
-public class WrongLoginServlet {
+public class CorrectLoginServlet {
 
     private static Logger logger = LoggerFactory.getLogger(WrongLoginServlet.class);
 
@@ -18,7 +18,7 @@ public class WrongLoginServlet {
 
     private static String passwordRef;
 
-    public static void doPost (String username , String password) {
+    synchronized public static void doPost (String username , String password) {
         usernameRef = username;
         passwordRef = password;
         logger.info("username = " + usernameRef + " and password = " + passwordRef);
