@@ -1,5 +1,6 @@
 package com.liumapp.blog.thread.basic;
 
+import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.test.context.junit4.SpringRunner;
 
@@ -13,6 +14,16 @@ import org.springframework.test.context.junit4.SpringRunner;
 @RunWith(SpringRunner.class)
 public class StopThreadTest {
 
-
+    @Test
+    public void wrongWayTest () {
+        try {
+            WrongStopThread wrongStopThread= new WrongStopThread();
+            wrongStopThread.start();
+            wrongStopThread.sleep(2000);
+            wrongStopThread.interrupt();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
 
 }

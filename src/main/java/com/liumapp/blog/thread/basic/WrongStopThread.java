@@ -13,9 +13,9 @@ public class WrongStopThread extends Thread {
     @Override
     public void run() {
         super.run();
-        for (int i = 0 ; i < 500000 ; i++) {
+        for (int i = 0 ; i < 50000000 ; i++) {
             if (this.isInterrupted()) {
-                System.out.println("under stop status .");
+                System.out.println("the thread think you want stop.");
                 break;
             }
             System.out.println("i = " + i);
