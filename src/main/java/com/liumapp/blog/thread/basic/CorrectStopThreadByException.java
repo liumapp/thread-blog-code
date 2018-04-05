@@ -15,11 +15,16 @@ public class CorrectStopThreadByException extends Thread {
         super.run();
         try {
             for (int i = 0 ; i < 50000000 ; i++) {
+                System.out.println("i = " + i);
                 if (this.isInterrupted()) {
                     System.out.println("the thread think you want stop.");
-//                    throw new InterruptedException();
+                    throw new InterruptedException();
                 }
             }
+            System.out.println("after for .  this will not be executed");
+        } catch (InterruptedException e) {
+            System.out.println("in exception catch method");
+            e.printStackTrace();
         }
     }
 

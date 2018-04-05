@@ -26,4 +26,17 @@ public class StopThreadTest {
         }
     }
 
+    @Test
+    public void correctStopByException () {
+        try {
+            CorrectStopThreadByException correctStopThreadByException = new CorrectStopThreadByException();
+            correctStopThreadByException.start();
+            correctStopThreadByException.sleep(2000);
+            correctStopThreadByException.interrupt();
+        } catch (InterruptedException e) {
+            System.out.println("main catch");
+            e.printStackTrace();
+        }
+    }
+
 }
