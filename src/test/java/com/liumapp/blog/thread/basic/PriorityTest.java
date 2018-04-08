@@ -1,5 +1,6 @@
 package com.liumapp.blog.thread.basic;
 
+import com.liumapp.blog.thread.basic.priority.PriorityExtended1;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.test.context.junit4.SpringRunner;
@@ -22,12 +23,12 @@ public class PriorityTest {
         System.out.println("main thread begin , and his priority is : " + Thread.currentThread().getPriority());
         Thread.currentThread().setPriority(6);
         System.out.println("main thread end , and his priority is : " + Thread.currentThread().getPriority());
-        Priority1 priority1 = new Priority1();
-        priority1.start();
+        PriorityExtended1 priorityExtended1 = new PriorityExtended1();
+        priorityExtended1.start();
         System.out.println("now ,let us run again:");
         Thread.currentThread().setPriority(7);
-        Priority1 priority11 = new Priority1();
-        priority11.start();
+        PriorityExtended1 priorityExtended11 = new PriorityExtended1();
+        priorityExtended11.start();
     }
 
 }
