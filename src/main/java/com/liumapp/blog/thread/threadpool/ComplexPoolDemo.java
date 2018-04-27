@@ -4,12 +4,12 @@ import java.util.concurrent.*;
 
 /**
  * @author liumapp
- * @file WorkerPool.java
+ * @file ComplexPoolDemo.java
  * @email liumapp.com@gmail.com
  * @homepage http://www.liumapp.com
  * @date 4/27/18
  */
-public class WorkerPool {
+public class ComplexPoolDemo {
 
     public static void main(String args[]) throws InterruptedException{
         //RejectedExecutionHandler implementation

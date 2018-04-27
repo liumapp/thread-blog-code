@@ -28,7 +28,7 @@ public class ScheduledThreadPool {
         }
 
         //add some delay to let some threads spawn by scheduler
-        Thread.sleep(30000);
+        Thread.sleep(300);
 
         scheduledThreadPool.shutdown();
         while(!scheduledThreadPool.isTerminated()){

@@ -5,12 +5,12 @@ import java.util.concurrent.Executors;
 
 /**
  * @author liumapp
- * @file SimpleThreadPool.java
+ * @file SimpleThreadPoolDemo.java
  * @email liumapp.com@gmail.com
  * @homepage http://www.liumapp.com
  * @date 4/27/18
  */
-public class SimpleThreadPool {
+public class SimpleThreadPoolDemo {
 
     public static void main(String[] args) {
         ExecutorService executor = Executors.newFixedThreadPool(5);
