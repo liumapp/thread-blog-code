@@ -31,11 +31,13 @@ public class ComplexPoolDemo {
             executorPool.execute(new WorkerThread("cmd"+i));
         }
 
-        Thread.sleep(30000);
+        Thread.sleep(300);
         //shut down the pool
         executorPool.shutdown();
+        while(!executorPool.isTerminated()) {
+        }
         //shut down the monitor thread
-        Thread.sleep(5000);
+        Thread.sleep(500);
         monitor.shutdown();
 
     }
