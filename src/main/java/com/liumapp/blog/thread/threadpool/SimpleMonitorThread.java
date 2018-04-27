@@ -20,9 +20,11 @@ public class SimpleMonitorThread implements Runnable {
         this.executor = executor;
         this.seconds=delay;
     }
+
     public void shutdown(){
         this.run=false;
     }
+
     @Override
     public void run()
     {
