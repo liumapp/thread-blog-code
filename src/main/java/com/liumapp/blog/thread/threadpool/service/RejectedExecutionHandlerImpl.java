@@ -1,4 +1,4 @@
-package com.liumapp.blog.thread.threadpool;
+package com.liumapp.blog.thread.threadpool.service;
 
 import java.util.concurrent.RejectedExecutionHandler;
 import java.util.concurrent.ThreadPoolExecutor;

@@ -1,4 +1,4 @@
-package com.liumapp.blog.thread.threadpool;
+package com.liumapp.blog.thread.threadpool.runnable;
 
 import java.util.concurrent.ThreadPoolExecutor;
 

@@ -1,6 +1,6 @@
 package com.liumapp.blog.thread.threadpool.scheduler;
 
-import com.liumapp.blog.thread.threadpool.WorkerThread;
+import com.liumapp.blog.thread.threadpool.runnable.WorkerThread;
 
 import java.util.Date;
 import java.util.concurrent.Executors;
