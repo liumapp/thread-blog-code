@@ -15,13 +15,19 @@ import java.util.concurrent.*;
  */
 public class ComplexPoolDemo {
 
-    public static void main(String args[]) throws InterruptedException{
+    public static void main(String args[]) throws InterruptedException {
         //RejectedExecutionHandler implementation
         RejectedExecutionHandlerImpl rejectionHandler = new RejectedExecutionHandlerImpl();
         //Get the ThreadFactory implementation to use
         ThreadFactory threadFactory = Executors.defaultThreadFactory();
         //creating the ThreadPoolExecutor
-        ThreadPoolExecutor executorPool = new ThreadPoolExecutor(2, 4, 10, TimeUnit.SECONDS, new ArrayBlockingQueue<Runnable>(2), threadFactory, rejectionHandler);
+        ThreadPoolExecutor executorPool = new ThreadPoolExecutor(2,
+                6,
+                10,
+                TimeUnit.SECONDS,
+                new ArrayBlockingQueue<Runnable>(2),
+                threadFactory,
+                rejectionHandler);
         //start the monitoring thread
         SimpleMonitorThread monitor = new SimpleMonitorThread(executorPool, 3);
         Thread monitorThread = new Thread(monitor);
